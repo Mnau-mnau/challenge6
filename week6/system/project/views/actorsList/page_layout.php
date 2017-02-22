@@ -1,9 +1,9 @@
 <div class="moviesList">
     <div class="catcher">
-        <h2>List of all movies</h2>
+        <h2>List of all actors</h2>
     </div>
 
-    <?php echo $moviesList;?>
+    <?php echo $actorsList;?>
 
 
 </div>

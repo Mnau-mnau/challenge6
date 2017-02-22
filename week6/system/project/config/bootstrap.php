@@ -43,10 +43,10 @@ require_once(MODELS_DIR.'/moviesList.model.php');
 require_once(MODELS_DIR.'/moviesList.object.php');
 require_once(MODELS_DIR.'/movies.model.php');
 require_once(MODELS_DIR.'/movies.object.php');
-//require_once(MODELS_DIR.'/actorsList.model.php');
-//require_once(MODELS_DIR.'/actorsList.object.php');
-//require_once(MODELS_DIR.'/actors.model.php');
-//require_once(MODELS_DIR.'/actors.object.php');
+require_once(MODELS_DIR.'/actorsList.model.php');
+require_once(MODELS_DIR.'/actorsList.object.php');
+require_once(MODELS_DIR.'/actors.model.php');
+require_once(MODELS_DIR.'/actors.object.php');
 
 //load the config file
 config::load();

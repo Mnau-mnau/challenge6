@@ -10,10 +10,11 @@
 // $results = $paginator->getData($page,$limit);
 ?>
 <div class="news">
-    <?php foreach($moviesList as $movie):?>
+    <?php foreach($actorsList as $actor):?>
+    
     <div class="movieDetail effect8">
         <div class="catcher">
-           <a href="?page=movies&amp;id=<?php echo $movie->imdb_id;?>" style="color:black; text-decoration:none"><h2><?php echo $movie->name;?></h2></a>
+           <a href="?page=actors&id=<?php echo $actor->imdb_id;?>" style="color:black; text-decoration:none"><h2><?php echo $actor->fullname;?></h2></a>
             
         </div>
         
@@ -22,9 +23,9 @@
                 <img src="images/star-icon-32.png" alt="Image placeholder" style="height:100px;"/>
             </div>
             <div class="title">
-                <h3 class="h2-right">Movie presented: <?php echo $movie->year;?></h3>
-                <h3 class="h2-right">Movie rating: <?php echo $movie->rating;?></h3>
-                <h3 class="h2-right">Number of votes: <?php echo $movie->votes_nr;?></h3>
+                <h3 class="h2-right">Name: <?php echo $actor->fullname;?></h3>
+                <h3 class="h2-right">Movie rating: <?php //echo $actor->rating;?></h3>
+                <h3 class="h2-right">Number of votes: <?php //echo $actor->votes_nr;?></h3>
                 <p></p>
             </div>
         </div>

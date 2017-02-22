@@ -6,21 +6,24 @@
 ?>
 
 <div class="actor_profile  effect2">  
-    <?php foreach($actors as $actor):?>
-        <h2 class="catcher"><?php echo $actor->fullname;?></h2>  
+    
+        <?php foreach($actors as $actor):?>
+        <h2 class="catcher"><?php echo $actor->fullname;break;endforeach; ?></h2>  
+    
         <div class="profile">
             <div class="main_pict">
-                <img src="../images/felicity-jones.jpg" alt="Felicity Jones portrait"/>
+                <img style="height:150px;"src="../images/star-icon-32.png" alt="Image placeholder"/>
             </div>
+            <ul>
+            <?php foreach($actors as $actor):?>
             <div class="article">
-                <p>In full name <?php echo $actor->first_name.' '.(isset($actor->middle_name)?$actor->middle_name:'').' '.$actor->last_name; ?>
-                <p> Born on <?php echo isset($actor->birth_date)? $actor->birth_date:'unknown; in'.$actor->birth_location; ?></p>
-                <h3 class="catcher">Biography</h3>
-                <p>
-                We don't have any personal data about this actor. Maybe later.
-                </p>
+                <li>Played  <?php echo $actor->description; ?> in <a href="?page=movies&amp;id=<?php echo $actor->imdb_id; ?>"> <?php echo $actor->name; ?></a></li>
             </div>
+
+            <?php endforeach;?>
+            </ul>
         </div>
+</div>
   <!--     This is a programming game for those who are crazy enough to pull out data about linked movies, good luck, not me tonite
       
        <div class="catcher">
@@ -47,5 +50,5 @@
                             </div>
                         </div>
                     </div> -->
-</div>
-<?php endforeach;?>
+                    
+
