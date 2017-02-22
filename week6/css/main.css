@@ -1,0 +1,482 @@
+body {
+	max-width:1000px;
+	margin: auto;
+	font-family:'Ubuntu', sans-serif;
+	margin-top:0;
+}
+
+hr {
+	border: 1px solid #D79763;
+}
+
+/* This is a guide to this file
+
+list of classes in index.html:
+header, page_title, logo, menu, search_bar
+
+main, news, catcher, thumbnail, title, selection, movie, star
+
+list of classes in movie
+main_pict, 
+
+list of classes in actor
+
+footer, links, credits
+
+effects css
+*/
+.header {
+	height: 160px;
+	background: #E6E6EC url(../images/helixnebula.jpg) no-repeat center center;
+	background-size: cover;
+	margin-bottom:0;
+	display: block;
+}
+.page_title {
+	display: flex;
+	justify-content: flex-start;
+	position:relative;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.logo img{
+	width:100px;
+	flex:1;
+	padding:20px;
+	margin:0px 30px;
+}
+.headline {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	color:#444;
+	font-size: 1.4em;
+	margin-top:0px;
+	margin-left:30px;
+}
+.headline a {
+	text-decoration: none;
+}
+.headline a h1 {
+	font-weight: 700;
+	text-decoration: none;
+	color:#444;
+	margin-bottom: 0px;
+	margin-top: 30px;
+}
+.headline h3 {
+	font-size: 0.9em;
+	margin-top: 10px;
+}
+.menu {
+	height: 40px;
+	background-color: #FBCD8D;
+	display: block;
+	border:1px solid #D79763;
+}
+.menu ul{
+	display: inline;
+	float: right;
+	position: relative;
+	margin-top: 5px;
+	margin-right: 20px;
+}
+.menu ul li{
+	display: inline-block;
+	float: right;
+	padding: 5px 10px;
+	margin-right:10px;
+}
+.menu ul li a{
+	text-decoration: none;
+	color:#444;
+}
+.menu ul li a:hover {
+	color: #fff;
+	font-weight: 500;
+}
+
+/* main section */
+
+.main {
+	margin-top: 60px;
+	display: block;
+}
+.news {
+	border:1px solid #D79763;
+	padding:10px;
+	background-color: #fff;
+}
+.news_article {
+	display:flex;
+	justify-content:space-around;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+.article {
+	padding:10px;
+}
+.article p {
+	padding-left:10px;
+}
+
+.catcher {
+	display: block;
+	padding:0px 10px;
+	background: #EFEFE4;
+    background: -webkit-linear-gradient(left, #fff, #FBCD8D, #fff );
+    background: -o-linear-gradient(right, #fff, #FBCD8D, #fff );
+    background: -moz-linear-gradient(right, #fff, #FBCD8D, #fff );
+    background: linear-gradient(to right, #fff, #FBCD8D, #fff );
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.thumbnail img {
+	max-height:200px;
+	padding:10px;
+	justify-content: flex-start;
+}
+
+.title {
+	justify-content: flex-end;
+	padding: 0 25px;
+	margin-top: -15px;
+
+}
+.title p {
+	text-indent: 20px;
+}
+.title a {
+	text-decoration: none;
+	color:#444;
+}
+.selection {
+	border:1px solid #D79763;
+	margin-top: 60px;
+	display: flex;
+	background-color: #fff;
+}
+.movie, .star {
+	padding:10px;
+	width:50%;
+	border:1px solid #D79763;
+	margin:20px;
+	text-align: center;
+	background-color: #fff;
+}
+.image img{
+	max-height:450px;
+	padding:20px;
+	display: flex;
+	justify-content: center;
+	margin:auto;
+}
+.movie {
+	justify-content: center;
+}
+.star {
+	justify-content: flex-end;
+}
+
+.row {
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: flex-start;
+ }
+.row img{
+	height:230px;
+	margin:auto;
+	padding:10px;
+}
+.row .movie {
+	display: flex;
+ 	flex-direction: column;
+}
+.row .movie a {
+	text-decoration: none;
+	color:#444;
+}
+
+/* Movie page specials */
+
+.page {
+	padding:10px;
+	width:50%;
+	margin:10px;
+	text-align: left;
+	background-color: #fff;
+}
+
+.plot {
+	width:70%;
+}
+.detail {
+	display: flex;
+	justify-content: space-between;
+}
+.rating {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+}
+.icon {
+	height: 30px;
+	margin-top: 8px;
+}
+
+ progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+   margin-top: 14px;
+  width: 100px;
+  height: 20px;
+}
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #FBCD8D, #D79763);
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    background-color: #fff;
+}
+.margin_r_10 {
+	margin-right: 10px;
+}
+.main_pict {
+	width:30%;
+}
+
+.main_pict img {
+	max-height: 350px;
+	margin: auto;
+	padding:15px;
+}
+
+.reviews {
+	display: block;
+	border:1px solid #D79763;
+	padding:10px;
+	margin-top: 30px;
+	background-color: #fff;
+
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+
+.review {
+	display: block;
+	border:1px solid #D79763;
+	padding:10px;
+	margin:10px;
+	width:30%;
+}
+
+.review p {
+	max-height: 200px;
+	overflow: scroll;
+}
+.casting {
+	padding-top: 10px;
+}
+.cast_bar {
+	display: block;
+	border:1px solid #D79763;
+	padding:10px;
+	margin-top:30px;
+	background-color: #fff;
+}
+
+.trivia {
+	max-width: 30%;
+	padding:10px;
+}
+
+.trivia p {
+	margin-left: 10px;
+}
+.actors {
+	justify-content: flex-start;
+
+}
+.cast_star {
+	margin:0px 10px;
+}
+.cast_thumb img{
+	max-height:150px;
+}
+.cast {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding:10px;
+	margin:5px;
+}
+.related {
+	margin-left: 20px;
+}
+
+/* Actor page special */
+.actor_profile {
+	background-color: #fff;
+	display: block;
+	border:1px solid #D79763;
+	padding:10px;
+	margin-top:30px;
+}
+
+.profile{
+	display: flex;
+
+}
+/* Footer styles */
+
+.footer {
+	height: 180px;
+	background: #E6E6EC;
+	background-size: cover;
+	margin-bottom:0;
+	display: block;
+	margin-top:40px;
+}
+.content {
+	display:flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #D79763;
+}
+.copyright {
+	margin: 10px 10px 5px 10px;
+	font-size: 0.9em;
+	padding:0px;
+	display: flex;
+	flex-direction: row-reverse;
+	clear: both;
+
+}
+.links {
+	padding:0px;
+}	
+.links ul li {
+	list-style: none;
+	padding-top:5px;
+}
+.links ul li a {
+	text-decoration: none;
+	color:#444;
+}
+
+.credits{
+	font-size: 0.8em;
+	max-width: 400px;
+	margin:auto;
+	padding:0px;
+}
+.thumb{
+	height:80px;
+}
+
+/* Movies list*/
+.moviesList{
+	margin-top:100px;
+	border:1px solid #D79763;
+	padding:10px;
+	background-color: #fff;
+}
+.movies{
+	border:1px solid #D79763;
+	background-color:#fff;
+	padding:10px;
+
+}
+.movieDetail{
+	border:1px solid #D79763;
+	background-color:#fff;
+	padding:10px;
+}
+.h2-left{
+	display: inline-block;
+}
+.h2-right{
+	display: inline-block;
+
+}
+/*effects section */
+
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+.effect8
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
